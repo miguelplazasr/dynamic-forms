@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
+
+<form>
+  <mat-form-field>
+    <mat-select placeholder="Select country" [(ngModel)]="selectedValue" name="country">
+      <mat-option *ngFor="let country of countries" [value]="country.code" (onSelectionChange)="cambio($event)">
+        {{country.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <p> Selected value: {{selectedValue}} </p>
+</form>
+
+<app-child [country]="selectedValue" ></app-child>
