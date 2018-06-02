@@ -8,13 +8,15 @@ import { ChildComponent } from './components/child/child.component';
 
 import { CustomMaterialModule } from '../shared/modules/custom-material/custom-material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TabsPipe } from './pipes/tabs.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TabsPipe
   ],
   imports: [
     BrowserModule,

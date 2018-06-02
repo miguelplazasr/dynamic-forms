@@ -11,9 +11,9 @@ export class ChildComponent implements OnChanges {
 
   countrySelected: string;
 
-  tabs = [
+  countryList = [
     { 
-      country: 'COL',
+      name: 'COL',
       tabs: [
         {name: 'tab01'},
         {name: 'tab02'},
@@ -25,6 +25,10 @@ export class ChildComponent implements OnChanges {
   ngOnChanges(changes: {[propKey: string]: SimpleChange}){
 
     this.countrySelected = changes.country.currentValue;
+
+  }
+
+  extractTabs(){
 
   }
 
