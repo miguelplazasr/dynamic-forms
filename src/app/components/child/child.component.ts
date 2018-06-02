@@ -15,9 +15,9 @@ export class ChildComponent implements OnChanges {
     { 
       name: 'COL',
       tabs: [
-        {name: 'tab01'},
-        {name: 'tab02'},
-        {name: 'tab03'},
+        {name: 'tab01', link: 'link01'},
+        {name: 'tab02', link: 'link02'},
+        {name: 'tab03', link: 'link03'},
       ]
   }
   ];

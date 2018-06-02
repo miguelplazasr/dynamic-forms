@@ -2,6 +2,11 @@
   child works! {{ countrySelected  }}
 </p>
 
+<mat-tab-group>
+  <mat-tab label="Tab 1">Content 1</mat-tab>
+  <mat-tab label="Tab 2">Content 2</mat-tab>
+</mat-tab-group>
+
 
 
 <ul>
@@ -9,3 +14,19 @@
     {{tab.tabs}}
   </li>
 </ul>
+
+
+<a href="https://material.angular.io/components/tabs/overview#tabs-and-navigation">
+Ejemplo de TABS con navegacion
+</a>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link
+       *ngFor="let tab of ( countryList | tabs:countrySelected ) "
+       
+       >
+      {{tab.name}}
+    </a>
+  </nav>
+
+

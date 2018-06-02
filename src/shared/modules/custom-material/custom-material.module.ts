@@ -6,14 +6,16 @@ import { ObserversModule } from "@angular/cdk/observers";
 
 import { 
   MatToolbarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTabsModule
  } from "@angular/material";
 
 const MatModules = [
   LayoutModule,
   ObserversModule,
   MatToolbarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTabsModule
 ]
 
 
